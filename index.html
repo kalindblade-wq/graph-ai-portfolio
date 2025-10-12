@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI for Work & Research Portfolio</title>
+    <!-- Load Tailwind CSS via CDN for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import and application */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+        }
+        
+        /* Custom gradient for section separators and highlights (Made deeper) */
+        .ai-gradient-bg {
+            /* Deeper blues, purples, and teals for a more techy, vibrant feel */
+            background: linear-gradient(135deg, #1e3a8a, #4f46e5, #0f766e); 
+        }
+
+        /* Text gradient with higher contrast */
+        .ai-gradient-text {
+            background-image: linear-gradient(45deg, #38bdf8, #a78bfa, #f472b6); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Subtle scrollbar style for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1f2937;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 4px;
+        }
+
+        /* NEW: Glowing Border Effect for Cards */
+        .glow-border {
+            /* Soft shadow matching the primary gradient colors (indigo/violet) */
+            box-shadow: 0 0 15px rgba(129, 140, 248, 0.4), 0 0 5px rgba(79, 70, 229, 0.6);
+            border: 1px solid rgba(129, 140, 248, 0.2);
+        }
+        
+        /* NEW: Enhanced Hover effect for list items and modules */
+        .glow-hover:hover {
+            /* Stronger shadow/glow on hover */
+            box-shadow: 0 0 25px rgba(167, 139, 250, 0.6), 0 0 10px rgba(79, 70, 229, 0.8);
+            transform: translateY(-2px);
+            background-color: #1f2937; /* Darker background on hover */
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="text-white selection:bg-purple-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="text-2xl font-extrabold ai-gradient-text">
+                    GenAI Portfolio
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#about-me" class="text-sm font-medium text-gray-300 hover:text-indigo-400 transition duration-300">About Me</a>
+                    <a href="#the-course" class="text-sm font-medium text-gray-300 hover:text-indigo-400 transition duration-300">The Course</a>
+                    <a href="#submissions" class="text-sm font-medium text-gray-300 hover:text-indigo-400 transition duration-300">Submissions</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="ai-gradient-bg min-h-screen flex items-center justify-center p-4 sm:p-8">
+            <div class="text-center max-w-4xl space-y-6">
+                <h1 class="text-6xl sm:text-7xl lg:text-8xl font-black leading-tight tracking-tight drop-shadow-lg">
+                    <span class="block text-white">Generative AI</span>
+                    <span class="block text-indigo-200">for Work & Research</span>
+                </h1>
+                <p class="text-xl sm:text-2xl font-medium text-indigo-100/90 max-w-3xl mx-auto">
+                    A Portfolio Showcase by Dr. Kim A. Lindblade, PhD MPH FASTMH
+                </p>
+                <div class="pt-8">
+                    <a href="#about-me" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-500 transition duration-300 shadow-xl shadow-indigo-500/50 transform hover:scale-[1.02]">
+                        Explore My Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="py-16 sm:py-24 px-4 bg-gray-900">
+            <div class="max-w-6xl mx-auto space-y-12">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-center ai-gradient-text">
+                    About Me
+                </h2>
+                
+                <!-- Applied glow-border class here -->
+                <div class="bg-gray-800/70 backdrop-blur-sm rounded-3xl p-6 sm:p-10 glow-border transition duration-500">
+                    <div class="grid lg:grid-cols-3 gap-10">
+                        <!-- Summary -->
+                        <div class="lg:col-span-2 space-y-6">
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                As a **Global Health Leader** with over 25 years of experience, my career has centered on developing evidence to inform health policies and program implementation across Africa, Asia, and the Americas. I specialize in leading multi-country disease elimination, operational research initiatives, and strengthening institutional capacity for surveillance.
+                            </p>
+                            <p class="text-lg text-gray-300 leading-relaxed">
+                                This course, "Generative AI for Work & Research," represents a critical step in integrating cutting-edge **AI tools** and **no-code automation** into complex global health workflows, leveraging technology to amplify research impact and efficiency.
+                            </p>
+                            <a href="#the-course" class="inline-flex mt-4 text-indigo-400 hover:text-indigo-300 font-medium transition duration-300">
+                                See how I'm applying AI for impact &rarr;
+                            </a>
+                        </div>
+                        
+                        <!-- Education -->
+                        <div class="lg:col-span-1 space-y-4 border-l-2 border-indigo-500 pl-6 lg:pl-8">
+                            <h3 class="text-2xl font-bold text-indigo-400">Key Credentials</h3>
+                            
+                            <div class="space-y-3">
+                                <p class="text-gray-300">
+                                    <span class="font-semibold text-white">MBA in International Health Management</span><br>
+                                    <span class="text-sm text-gray-400">Swiss TPH, Basel, Switzerland (Expected 2027)</span>
+                                </p>
+                                <p class="text-gray-300">
+                                    <span class="font-semibold text-white">PhD in Epidemiologic Science</span><br>
+                                    <span class="text-sm text-gray-400">University of Michigan, Ann Arbor, MI (1999)</span>
+                                </p>
+                                <p class="text-gray-300">
+                                    <span class="font-semibold text-white">MPH in General Epidemiology</span><br>
+                                    <span class="text-sm text-gray-400">University of Michigan, Ann Arbor, MI (1992)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Course Section -->
+        <section id="the-course" class="py-16 sm:py-24 px-4 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-6xl mx-auto space-y-12">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-center ai-gradient-text">
+                    About the Course
+                </h2>
+                
+                <!-- Applied glow-border class here -->
+                <div class="bg-gray-800/70 backdrop-blur-sm rounded-3xl p-6 sm:p-10 glow-border transition duration-500 space-y-6">
+                    <h3 class="text-3xl font-bold text-indigo-400">
+                        Generative AI for Work & Research: No-Code AI Tools for Task Automation
+                    </h3>
+                    <p class="text-xl text-gray-300">
+                        This 8-week guided course focuses on mastering no-code AI tools to automate complex tasks in professional and research settings. It emphasizes practical application, from generating structured documents to deploying autonomous AI agents.
+                    </p>
+
+                    <h4 class="text-2xl font-semibold text-white pt-4 border-t border-gray-700">Key Focus Areas (Modules)</h4>
+                    
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Module 1 - Applied glow-hover class -->
+                        <div class="p-5 bg-gray-700/50 rounded-xl space-y-2 border border-indigo-600/30 glow-hover">
+                            <p class="text-lg font-bold text-indigo-300">Module 1: Content Generation</p>
+                            <p class="text-sm text-gray-400">Generating Markdown, LaTeX, and HTML outputs. Building simple research websites with LLMs, and designing clear presentations/posters.</p>
+                        </div>
+                        <!-- Module 2 - Applied glow-hover class -->
+                        <div class="p-5 bg-gray-700/50 rounded-xl space-y-2 border border-indigo-600/30 glow-hover">
+                            <p class="text-lg font-bold text-indigo-300">Module 2: AI-Automated Data Analysis</p>
+                            <p class="text-sm text-gray-400">Automating data cleaning, running statistical analyses, and visualizing results using AI tools.</p>
+                        </div>
+                        <!-- Module 5 - Applied glow-hover class -->
+                        <div class="p-5 bg-gray-700/50 rounded-xl space-y-2 border border-indigo-600/30 glow-hover">
+                            <p class="text-lg font-bold text-indigo-300">Module 5: AI Automation & Agents</p>
+                            <p class="text-sm text-gray-400">Introduction to agent-based systems. Building AI agents for complex automation flows and browser control for web-based tasks.</p>
+                        </div>
+                        <!-- Module 6 - Applied glow-hover class -->
+                        <div class="p-5 bg-gray-700/50 rounded-xl space-y-2 border border-indigo-600/30 glow-hover">
+                            <p class="text-sm text-gray-400">Creating AI-generated research summaries, designing scientific figures, and producing video abstracts for research dissemination.</p>
+                        </div>
+                        <!-- Module 7 - Applied glow-hover class -->
+                        <div class="p-5 bg-gray-700/50 rounded-xl space-y-2 border border-indigo-600/30 glow-hover">
+                            <p class="text-lg font-bold text-indigo-300">Module 7: Capstone Project</p>
+                            <p class="text-sm text-gray-400">The final module involves collaborating, refining, and presenting a final, complete AI solution or tool built during the course.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weekly Submissions Section (Placeholder) -->
+        <section id="submissions" class="py-16 sm:py-24 px-4 bg-gray-900 border-t border-gray-800">
+            <div class="max-w-4xl mx-auto space-y-12">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-center ai-gradient-text">
+                    Weekly Submissions
+                </h2>
+                
+                <p class="text-lg text-gray-400 text-center max-w-2xl mx-auto">
+                    Below is the list of weekly assignments and projects from the course. Links will be updated here as each submission is completed and reviewed.
+                </p>
+
+                <!-- List of Submissions -->
+                <div class="space-y-4">
+                    <!-- Weekly Item Template - Applied glow-hover class -->
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W1</span>
+                            Module 1: Structured Document Generation
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+                    <!-- End Weekly Item Template -->
+
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W2</span>
+                            Module 2: Data Analysis Automation Tool
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W3</span>
+                            Module 3: Advanced Prompt Engineering Exercise
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W4</span>
+                            Module 4: API Integration Mini-Project
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W5</span>
+                            Module 5: Custom AI Agent Deployment
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W6</span>
+                            Module 6: Research Dissemination Assets
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W7</span>
+                            Module 7: Capstone Project Refinement
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <span class="text-xl font-semibold text-white flex items-center">
+                            <span class="text-indigo-400 mr-4 font-extrabold w-8 text-center">W8</span>
+                            Final Capstone Project Showcase
+                        </span>
+                        <a href="#" class="text-indigo-400 hover:text-teal-400 transition duration-300 font-medium">
+                            [Link Pending] &rarr;
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ai-gradient-bg p-6 text-center text-sm border-t border-gray-700">
+        <p class="text-white/80">&copy; 2025 Kim A. Lindblade. Generative AI Portfolio Showcase. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +30,6 @@
 
         /* Text gradient with a more futuristic cyan-pink look */
         .ai-gradient-text {
-            /* Vibrant cyan to pink/purple flow */
             background-image: linear-gradient(90deg, #67e8f9, #a78bfa, #f0abfc); 
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -40,30 +38,19 @@
         }
 
         /* Subtle scrollbar style for aesthetics */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #1f2937;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #4f46e5;
-            border-radius: 4px;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #4f46e5; border-radius: 4px; }
 
         /* ENHANCED: Glowing Card Shadow */
         .glow-card-shadow {
-            /* Soft diffused shadow using accent colors */
             box-shadow: 0 4px 60px rgba(167, 139, 250, 0.1), 0 0 10px rgba(79, 70, 229, 0.4);
             border: 1px solid rgba(79, 70, 229, 0.3);
-            background-color: #1a1e27; /* Slightly lighter background for the card body */
+            background-color: #1a1e27;
         }
         
         /* ENHANCED: Hover effect */
         .glow-hover:hover {
-            /* Stronger glow and lift for a dynamic effect */
             box-shadow: 0 4px 80px rgba(103, 232, 249, 0.15), 0 0 20px rgba(167, 139, 250, 0.7);
             transform: translateY(-4px); 
             background-color: #1f2937; 
@@ -251,7 +238,7 @@
                         <div class="flex items-center justify-between">
                             <span class="text-xl font-semibold text-white flex items-center">
                                 <span class="text-cyan-400 mr-4 font-extrabold w-8 text-center">W2</span>
-                                Workshop 2: Automated Data Analysis
+                                Module 2: Automated Data Analysis
                             </span>
                             <a href="https://github.com/kalindblade-wq/graph-ai-portfolio/blob/main/Workshop%202%20Lindblade.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-purple-400 hover:text-pink-400 font-medium">
                                 View Report &rarr;
@@ -262,15 +249,22 @@
                         </p>
                     </div>
 
-                    <!-- UPDATED W3 CARD -->
-                    <div class="flex items-center justify-between bg-gray-800/70 p-4 rounded-xl border border-gray-700 glow-hover transition duration-300">
-                        <span class="text-xl font-semibold text-white flex items-center">
-                            <span class="text-cyan-400 mr-4 font-extrabold w-8 text-center">W3</span>
-                            Module 3: Advanced Prompt Engineering Exercise
-                        </span>
-                        <a href="https://github.com/kalindblade-wq/graph-ai-portfolio/blob/main/Report%20Week%203%20Lindblade.pdf?raw=true" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-pink-400 transition duration-300 font-medium">
-                            View Report &rarr;
-                        </a>
+                    <!-- UPDATED W3 CARD WITH SUBTITLE -->
+                    <div class="bg-gray-800/70 p-5 rounded-xl border border-gray-700 glow-hover transition duration-300">
+                        <div class="flex items-center justify-between">
+                            <div class="min-w-0">
+                                <span class="text-xl font-semibold text-white flex items-center">
+                                    <span class="text-cyan-400 mr-4 font-extrabold w-8 text-center">W3</span>
+                                    Module 3: Advanced Prompt Engineering Exercise
+                                </span>
+                                <p class="mt-2 text-gray-300 text-sm sm:text-base pl-12">
+                                    Analyzing job market data with LLMs in sheets and AI reporting agents
+                                </p>
+                            </div>
+                            <a href="https://github.com/kalindblade-wq/graph-ai-portfolio/blob/main/Report%20Week%203%20Lindblade.pdf?raw=true" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-pink-400 transition duration-300 font-medium">
+                                View Report &rarr;
+                            </a>
+                        </div>
                     </div>
                     <!-- END UPDATED W3 CARD -->
 
@@ -335,4 +329,3 @@
 
 </body>
 </html>
-```
